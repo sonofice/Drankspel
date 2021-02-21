@@ -4,11 +4,18 @@ import sqlite3
 def create_table():
     conn = sqlite3.connect("playerdb.db")
     cur = conn.cursor()
-    cur.execute("CREATE TABLE if not exits Playerdata (Player TEXT, Score INTEGER)")
+    cur.execute("CREATE TABLE if not exits Playerdata (Player VARCHAR(15), Score INTEGER)")
     conn.commit()
     conn.close()
 
-def insert(score):
+def insert_name(Player):
+    conn = sqlite3.conncect("playerdb.db")
+    cur = conn.cursor()   
+    cur.execute("INSERT INTO Playerdata")
+    conn.commit()
+    conn.close()
+
+def insert_score(Score):
     conn = sqlite3.conncect("playerdb.db")
     cur = conn.cursor()
     cur.execute("INSERT INTO Playerdata VALUES(?,?)", (Player, Score))
