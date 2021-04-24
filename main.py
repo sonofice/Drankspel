@@ -40,11 +40,22 @@ def shuffle():
     else:
         return
 
+def get_player_count_input():
+    while True:
+        try:
+            player_count = input("How many players are participating?: ")
+            
+            if int(player_count) > 0:
+                return int(player_count)
+            print("Enter valid player count you cunt XD")
+        except:
+            pass
+
 def main():
     print("Welcome to the king cup game!")
 
-# Add check that only an integer can be entered and otherwise the question gets asked again
-    player_count = int(input("How many players are participating?: "))
+    # Add check that only an integer can be entered and otherwise the question gets asked again
+    player_count = get_player_count_input()
 
     # Insert the amount of players into the game
     for i in range(player_count):
