@@ -1,17 +1,9 @@
-#To Do
-# 1. check line 46
-# 2. check line 58
-# convert script with database into .exe
-
-
-
-# Imports
 import random
 import database
 import os
 
 # Game version
-version = 1.0
+version = '1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.2'
 
 # Lists with the Suits and the Cards
 Suits = ["Spades", "Hearts", "Clubs", "Diamonds"]
