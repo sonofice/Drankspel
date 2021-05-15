@@ -23,6 +23,10 @@ deck = []
 # List for the player names
 playerbase = []
 
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 # Creating all cards
 def create_cards():
     for suit in Suits:
@@ -73,7 +77,7 @@ def main():
 
         # Insert the user into the playerbase list
         playerbase.append(player_name)
-        os.system("cls")
+        clear_screen()
 
     print("These are the players", *playerbase)
     print("let's play!")
@@ -92,7 +96,7 @@ def main():
         for k in range(len(deck)):
             input("Press enter for the next round")
             shuffle()
-            os.system("cls")
+            clear_screen()
             print("Next is", playerbase[0], "with card", deck[0])
             
 
