@@ -1,17 +1,9 @@
-#To Do
-# 1. check line 46
-# 2. check line 58
-# convert script with database into .exe
-
-
-
-# Imports
 import random
 import database
 import os
 
 # Game version
-version = 1.0
+version = '1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.2'
 
 # Lists with the Suits and the Cards
 Suits = ["Spades", "Hearts", "Clubs", "Diamonds"]
@@ -22,6 +14,10 @@ deck = []
 
 # List for the player names
 playerbase = []
+
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 # Creating all cards
 def create_cards():
@@ -73,7 +69,7 @@ def main():
 
         # Insert the user into the playerbase list
         playerbase.append(player_name)
-        os.system("cls")
+        clear_screen()
 
     print("These are the players", *playerbase)
     print("let's play!")
@@ -92,7 +88,7 @@ def main():
         for k in range(len(deck)):
             input("Press enter for the next round")
             shuffle()
-            os.system("cls")
+            clear_screen()
             print("Next is", playerbase[0], "with card", deck[0])
             
 
